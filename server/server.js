@@ -22,4 +22,10 @@ app.post('/todos', (req, res) => {
   );
 });
 
+app.get('/', (req, res) => {
+  res.send('haha haha');
+});
+
 app.listen(3000);
+
+module.exports = { app };

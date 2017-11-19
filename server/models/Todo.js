@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 const todoSchema = new Schema({
   text: {
     type: String,
-    require: true,
-    minLength: 1,
+    required: true,
+    minlength: 1,
     trim: true
   },
   completed: {
